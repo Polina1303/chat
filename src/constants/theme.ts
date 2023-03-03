@@ -5,6 +5,7 @@ export const THEME = {
     DARKBLUE: '#4671D5',
     GRAY: '#909090',
     SILVER: '#C0C0C0',
+    RED: '#FF0000',
   },
   FONT_SIZES: {
     FONT_SIZE_24: 24,

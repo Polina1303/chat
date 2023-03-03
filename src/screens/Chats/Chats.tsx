@@ -1,7 +1,7 @@
-import { View, Text, FlatList, SafeAreaView } from 'react-native';
+import { Text, FlatList, SafeAreaView } from 'react-native';
 import React from 'react';
 import { users } from '../ChatList/users';
-import { ChatList } from '../ChatList/ChatList';
+import ChatList from '../ChatList/ChatList';
 import { styles } from './style';
 
 const Chats = () => {

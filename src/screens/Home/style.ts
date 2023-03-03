@@ -40,4 +40,10 @@ export const styles = StyleSheet.create({
     color: THEME.COLORS.WHITE,
     fontWeight: '600',
   },
+  errorText: {
+    color: THEME.COLORS.RED,
+    fontWeight: '600',
+    textAlign: 'center',
+    marginBottom: 20,
+  },
 });
