@@ -1,4 +1,8 @@
-import { Text, SafeAreaView, View, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { Text, View, Image, Pressable } from 'react-native';
+import { RouteName } from '../../navigation/types/RouteName';
+import { StackParamsList } from '../../navigation/types/StackParamsList';
 import { styles } from './style';
 import { Users } from './users';
 
@@ -7,9 +11,14 @@ export interface Props {
 }
 
 const ChatList = ({ item }: Props) => {
-  console.log(item);
+  const navigation =
+    useNavigation<NativeStackNavigationProp<StackParamsList>>();
+
+  const chatChoice = () => {
+    navigation.navigate(RouteName.Chat);
+  };
   return (
-    <View style={styles.container}>
+    <Pressable style={styles.container} onPress={chatChoice}>
       <View>
         <Image
           style={styles.image}
@@ -29,7 +38,7 @@ const ChatList = ({ item }: Props) => {
           {item?.lastMessage.text}
         </Text>
       </View>
-    </View>
+    </Pressable>
   );
 };
 

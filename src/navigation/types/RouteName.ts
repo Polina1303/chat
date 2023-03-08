@@ -3,5 +3,4 @@ export enum RouteName {
   ChatList = 'ChatList',
   Chats = 'Chats',
   Chat = 'Chat',
-  Message = 'Message',
 }

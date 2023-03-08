@@ -6,6 +6,7 @@ export const THEME = {
     GRAY: '#909090',
     SILVER: '#C0C0C0',
     RED: '#FF0000',
+    WHITE_GRAY: '#F5F5F5',
   },
   FONT_SIZES: {
     FONT_SIZE_24: 24,

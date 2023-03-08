@@ -14,7 +14,6 @@ import {
 import { RouteName } from '../../navigation/types/RouteName';
 import { StackParamsList } from '../../navigation/types/StackParamsList';
 import { styles } from './style';
-import { useAuth } from '../../components/useAuth';
 
 type Props = NativeStackScreenProps<StackParamsList, RouteName.Home>;
 

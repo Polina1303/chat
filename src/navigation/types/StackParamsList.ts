@@ -5,5 +5,4 @@ export type StackParamsList = {
   [RouteName.ChatList]: undefined;
   [RouteName.Chats]: undefined;
   [RouteName.Chat]: undefined;
-  [RouteName.Message]: undefined;
 };
